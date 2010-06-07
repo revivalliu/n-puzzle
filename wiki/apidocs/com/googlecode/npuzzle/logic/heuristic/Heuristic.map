@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="../genetic/PuzzleChromosome.html" title="&lt;TABLE&gt;" alt="" coords="16,17,147,41"/>
+<area shape="rect" href="./Heuristic.html" title="&lt;TABLE&gt;" alt="" coords="116,107,193,144"/>
+<area shape="rect" href="./ManhattanHeuristic.html" title="&lt;TABLE&gt;" alt="" coords="93,209,216,233"/>
+<area shape="rect" href="../astar/NodeImpl.html" title="&lt;TABLE&gt;" alt="" coords="192,17,264,41"/>
+</map>

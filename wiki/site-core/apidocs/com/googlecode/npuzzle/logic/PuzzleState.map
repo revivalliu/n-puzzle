@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="../controller/BaseController.html" title="&lt;TABLE&gt;" alt="" coords="16,11,245,85"/>
+<area shape="rect" href="../controller/AStarController.html" title="&lt;TABLE&gt;" alt="" coords="31,151,132,175"/>
+<area shape="rect" href="./PuzzleState.html" title="&lt;TABLE&gt;" alt="" coords="243,240,344,277"/>
+<area shape="rect" href="./BasePuzzleState.html" title="&lt;TABLE&gt;" alt="" coords="237,336,349,381"/>
+<area shape="rect" href="./genetic/PuzzleChromosome.html" title="&lt;TABLE&gt;" alt="" coords="228,151,359,175"/>
+<area shape="rect" href="./astar/NodeImpl.html" title="&lt;TABLE&gt;" alt="" coords="404,151,476,175"/>
+</map>

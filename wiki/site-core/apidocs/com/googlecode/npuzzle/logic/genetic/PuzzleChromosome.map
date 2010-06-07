@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="../PuzzleState.html" title="&lt;TABLE&gt;" alt="" coords="55,203,156,240"/>
+<area shape="rect" href="./PuzzleChromosome.html" title="&lt;TABLE&gt;" alt="" coords="40,113,171,137"/>
+<area shape="rect" href="../heuristic/Heuristic.html" title="&lt;TABLE&gt;" alt="" coords="201,203,279,240"/>
+</map>

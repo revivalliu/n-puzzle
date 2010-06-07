@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" href="./BaseController.html" title="&lt;TABLE&gt;" alt="" coords="413,107,643,181"/>
+<area shape="rect" href="./HumanController.html" title="&lt;TABLE&gt;" alt="" coords="16,295,128,319"/>
+<area shape="rect" href="./GAEncogController.html" title="&lt;TABLE&gt;" alt="" coords="173,240,432,373"/>
+<area shape="rect" href="./AStarController.html" title="&lt;TABLE&gt;" alt="" coords="477,295,579,319"/>
+<area shape="rect" href="../logic/Command.html" title="&lt;TABLE&gt;" alt="" coords="624,288,725,325"/>
+<area shape="rect" href="../logic/PuzzleState.html" title="&lt;TABLE&gt;" alt="" coords="600,432,701,469"/>
+<area shape="rect" href="./Controller.html" title="&lt;TABLE&gt;" alt="" coords="489,11,567,48"/>
+</map>

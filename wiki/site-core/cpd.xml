@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+<duplication lines="41" tokens="153">
+<file line="53" path="/media/ext/projects/personal/n-puzzle/n-puzzle-core/src/main/java/com/googlecode/npuzzle/logic/astar/BinaryList.java"/>
+<file line="55" path="/media/ext/projects/personal/n-puzzle/n-puzzle-core/src/main/java/com/googlecode/npuzzle/logic/astar/SortedList.java"/>
+<codefragment>
+<![CDATA[
+        Collections.sort(list);
+        return rtr;
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        return list.remove(o);
+    }
+
+    @Override
+    public boolean containsAll(Collection<?> clctn) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean addAll(Collection<? extends E> clctn) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean addAll(int i, Collection<? extends E> clctn) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean removeAll(Collection<?> clctn) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean retainAll(Collection<?> clctn) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void clear() {
+        list.clear();
+    }
+
+    @Override
+    public E get(int i) {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="35" tokens="128">
+<file line="19" path="/media/ext/projects/personal/n-puzzle/n-puzzle-core/src/main/java/com/googlecode/npuzzle/logic/astar/BinaryList.java"/>
+<file line="20" path="/media/ext/projects/personal/n-puzzle/n-puzzle-core/src/main/java/com/googlecode/npuzzle/logic/astar/SortedList.java"/>
+<codefragment>
+<![CDATA[
+    private List<E> list = new ArrayList<E>();
+
+    @Override
+    public int size() {
+        return list.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean contains(Object o) {
+        return list.contains(o);
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Object[] toArray() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public <T> T[] toArray(T[] ts) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean add(E e) {
+        boolean rtr = list.add(e);
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>

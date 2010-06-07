@@ -1,0 +1,5 @@
+com.googlecode.npuzzle.controller
+com.googlecode.npuzzle.logic
+com.googlecode.npuzzle.logic.astar
+com.googlecode.npuzzle.logic.genetic
+com.googlecode.npuzzle.logic.heuristic

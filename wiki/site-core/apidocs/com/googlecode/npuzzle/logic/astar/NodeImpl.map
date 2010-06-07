@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="../PuzzleState.html" title="&lt;TABLE&gt;" alt="" coords="16,256,117,293"/>
+<area shape="rect" href="../heuristic/Heuristic.html" title="&lt;TABLE&gt;" alt="" coords="163,256,240,293"/>
+<area shape="rect" href="./Node.html" title="&lt;TABLE&gt;" alt="" coords="84,11,183,101"/>
+<area shape="rect" href="./NodeImpl.html" title="&lt;TABLE&gt;" alt="" coords="97,167,169,191"/>
+</map>

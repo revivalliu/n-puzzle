@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="./effects/RefreshTransition.html" title="&lt;TABLE&gt;" alt="" coords="671,11,788,72"/>
+<area shape="rect" href="./Board.html" title="&lt;TABLE&gt;" alt="" coords="349,137,400,161"/>
+<area shape="rect" href="./effects/SolveTask.html" title="&lt;TABLE&gt;" alt="" coords="351,353,425,377"/>
+<area shape="rect" href="./BoardLayer.html" title="&lt;TABLE&gt;" alt="" coords="229,29,309,53"/>
+<area shape="rect" href="./Menu.html" title="&lt;TABLE&gt;" alt="" coords="241,245,289,269"/>
+<area shape="rect" href="./Main.html" title="&lt;TABLE&gt;" alt="" coords="137,29,180,53"/>
+<area shape="rect" href="./StatusBar.html" title="&lt;TABLE&gt;" alt="" coords="123,245,195,269"/>
+<area shape="rect" href="./KeyBoardAdapter.html" title="&lt;TABLE&gt;" alt="" coords="355,29,467,53"/>
+</map>

@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>n-puzzle-core - CPD Results</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            n-puzzle-core
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2010-06-07
+                      </div>
+            <div class="xright">            <a href="">n-puzzle-core</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                             <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="checkstyle.html">Checkstyle</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="cobertura/index.html">Cobertura Test Coverage</a>
+          </li>
+                  
+    <li class="none">
+              <strong>CPD Report</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="findbugs.html">FindBugs Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDocs UML</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="javancss.html">JavaNCSS Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="jdepend-report.html">JDepend</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="pmd.html">PMD Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="xref/index.html">Source Xref</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="surefire-report.html">Surefire Report</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>CPD Results</h2>
+<p>The following document contains the results of PMD's  <a class="externalLink" href="http://pmd.sourceforge.net/cpd.html">CPD</a> 4.2.5.</p>
+</div>
+<div class="section"><h2>Duplications</h2>
+<table class="bodyTable"><tr class="a"><th>File</th>
+<th>Line</th>
+</tr>
+<tr class="b"><td>com/googlecode/npuzzle/logic/astar/BinaryList.java</td>
+<td><a href="./xref/com/googlecode/npuzzle/logic/astar/BinaryList.html#53">53</a></td>
+</tr>
+<tr class="a"><td>com/googlecode/npuzzle/logic/astar/SortedList.java</td>
+<td><a href="./xref/com/googlecode/npuzzle/logic/astar/SortedList.html#55">55</a></td>
+</tr>
+<tr class="b"><td colspan='2'><div class="source"><pre>        Collections.sort(list);
+        return rtr;
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        return list.remove(o);
+    }
+
+    @Override
+    public boolean containsAll(Collection&lt;?&gt; clctn) {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public boolean addAll(Collection&lt;? extends E&gt; clctn) {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public boolean addAll(int i, Collection&lt;? extends E&gt; clctn) {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public boolean removeAll(Collection&lt;?&gt; clctn) {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public boolean retainAll(Collection&lt;?&gt; clctn) {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public void clear() {
+        list.clear();
+    }
+
+    @Override
+    public E get(int i) {</pre>
+</div>
+</td></tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>File</th>
+<th>Line</th>
+</tr>
+<tr class="b"><td>com/googlecode/npuzzle/logic/astar/BinaryList.java</td>
+<td><a href="./xref/com/googlecode/npuzzle/logic/astar/BinaryList.html#19">19</a></td>
+</tr>
+<tr class="a"><td>com/googlecode/npuzzle/logic/astar/SortedList.java</td>
+<td><a href="./xref/com/googlecode/npuzzle/logic/astar/SortedList.html#20">20</a></td>
+</tr>
+<tr class="b"><td colspan='2'><div class="source"><pre>    private List&lt;E&gt; list = new ArrayList&lt;E&gt;();
+
+    @Override
+    public int size() {
+        return list.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public boolean contains(Object o) {
+        return list.contains(o);
+    }
+
+    @Override
+    public Iterator&lt;E&gt; iterator() {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public Object[] toArray() {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public &lt;T&gt; T[] toArray(T[] ts) {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
+    }
+
+    @Override
+    public boolean add(E e) {
+        boolean rtr = list.add(e);</pre>
+</div>
+</td></tr>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010
+    
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

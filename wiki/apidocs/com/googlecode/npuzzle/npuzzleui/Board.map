@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="../controller/Controller.html" title="&lt;TABLE&gt;" alt="" coords="16,215,93,252"/>
+<area shape="rect" href="../logic/PuzzleState.html" title="&lt;TABLE&gt;" alt="" coords="504,215,605,252"/>
+<area shape="rect" href="./effects/RefreshTransition.html" title="&lt;TABLE&gt;" alt="" coords="131,323,248,384"/>
+<area shape="rect" href="./Board.html" title="&lt;TABLE&gt;" alt="" coords="507,113,557,137"/>
+<area shape="rect" href="./effects/SolveTask.html" title="&lt;TABLE&gt;" alt="" coords="307,341,381,365"/>
+<area shape="rect" href="./BoardLayer.html" title="&lt;TABLE&gt;" alt="" coords="469,17,549,41"/>
+<area shape="rect" href="./Menu.html" title="&lt;TABLE&gt;" alt="" coords="652,221,700,245"/>
+<area shape="rect" href="./Main.html" title="&lt;TABLE&gt;" alt="" coords="756,17,799,41"/>
+<area shape="rect" href="./StatusBar.html" title="&lt;TABLE&gt;" alt="" coords="853,221,925,245"/>
+<area shape="rect" href="./KeyBoardAdapter.html" title="&lt;TABLE&gt;" alt="" coords="595,17,707,41"/>
+</map>
