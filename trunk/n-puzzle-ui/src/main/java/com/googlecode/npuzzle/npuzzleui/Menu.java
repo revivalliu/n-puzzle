@@ -27,7 +27,7 @@ public class Menu extends FlowPane {
         this.board.setMenu(this);
         add(new Label("Controller: "));
         controllers = new ListButton();
-        controllers.setListData("['Human', 'A*', 'Genetic']");
+        controllers.setListData("['Human', 'A*', 'Genetic', 'Annealing']");
         controllers.setSelectedIndex(0);
         add(controllers);
         randomize = new PushButton();
