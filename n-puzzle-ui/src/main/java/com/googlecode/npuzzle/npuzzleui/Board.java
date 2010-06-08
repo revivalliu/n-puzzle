@@ -115,6 +115,7 @@ public class Board extends StackPane {
     }
 
     public void setController(String name) {
+        System.out.println(name);
         this.controller = ControllerFactory.createController(name, puzzleState);
     }
 
