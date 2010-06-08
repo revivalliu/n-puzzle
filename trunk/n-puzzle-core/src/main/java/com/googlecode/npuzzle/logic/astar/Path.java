@@ -1,72 +1,51 @@
+/*
+ *  Copyright 2010 thiago.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *  under the License.
+ */
+
 package com.googlecode.npuzzle.logic.astar;
 
 import java.util.ArrayList;
 
 /**
- * A path determined by some path finding algorithm. A series of steps from
- * the starting location to the target location. This includes a step for the
- * initial location.
- * 
- * @author Kevin Glass
+ *
+ * @author thiago
  */
 public class Path {
 
-    /** The list of steps building up this path */
     private ArrayList nodes = new ArrayList();
 
-    /**
-     * Create an empty path
-     */
     public Path() {
     }
 
-    /**
-     * Get the length of the path, i.e. the number of steps
-     *
-     * @return The number of steps in this path
-     */
     public int getLength() {
         return nodes.size();
     }
 
-    /**
-     * Get the step at a given index in the path
-     *
-     * @param index The index of the step to retrieve. Note this should
-     * be >= 0 and < getLength();
-     * @return The step information, the position on the map.
-     */
     public Node getNode(int index) {
         return (Node) nodes.get(index);
     }
 
-    /**
-     * Append a step to the path.
-     *
-     * @param x The x coordinate of the new step
-     * @param y The y coordinate of the new step
-     */
     public void appendStep(Node node) {
         nodes.add(node);
     }
 
-    /**
-     * Prepend a step to the path.
-     *
-     * @param x The x coordinate of the new step
-     * @param y The y coordinate of the new step
-     */
     public void prependStep(Node node) {
         nodes.add(0, node);
     }
 
-    /**
-     * Check if this path contains the given step
-     *
-     * @param x The x coordinate of the step to check for
-     * @param y The y coordinate of the step to check for
-     * @return True if the path contains the given step
-     */
     public boolean contains(Node node) {
         return nodes.contains(node);
     }
