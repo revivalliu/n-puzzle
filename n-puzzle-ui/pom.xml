@@ -41,6 +41,29 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>commons-collections:commons-collections</artifact>
+                                    <includes>
+                                        <include>org/apache/commons/collections/Buffer*</include>
+                                        <include>org/apache/commons/collections/buffer/Priority*</include>
+                                    </includes>
+                                </filter>
+                                <filter>
+                                    <artifact>org.encog:encog-core</artifact>
+                                    <includes>
+                                        <include>org/encog/solve/anneal/*</include>
+                                        <include>org/encog/EncogError*</include>
+                                        <include>org/encog/matrix/MatrixError*</include>
+                                        <include>org/encog/neural/NeuralNetworkError*</include>
+                                        <include>org/encog/solve/genetic/Chromosome*</include>
+                                        <include>org/encog/solve/genetic/GeneticAlgorithm*</include>
+                                        <include>org/encog/solve/genetic/MateWorker*</include>
+                                        <include>org/encog/util/concurrency/EncogConcurrency*</include>
+                                        <include>org/encog/util/concurrency/EncogTask*</include>
+                                    </includes>
+                                </filter>
+                            </filters>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.googlecode.npuzzle.npuzzleui.Main</mainClass>
