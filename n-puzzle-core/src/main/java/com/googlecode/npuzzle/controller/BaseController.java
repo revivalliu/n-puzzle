@@ -53,13 +53,12 @@ public abstract class BaseController implements Controller {
 
     @Override
     public void addCommand(Command cmd) {
-        System.out.println("No command accepted.");
+        //Actually has no function on the BaseController
     }
 
     @Override
     public final void execCommand() {
         Command cmd = bufferCommand.poll();
-        //notify
         if (cmd != null) {
             initialState.command(cmd);
         }

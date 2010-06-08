@@ -56,11 +56,8 @@ public class AStarController extends BaseController {
 
     private List<Command> generateCommands(PuzzleState initialState) {
         PathFinder aStar = new AStarTree();
-        long init = System.currentTimeMillis();
         Path path = aStar.findPath(new NodeImpl(initialState),
                 new NodeImpl(idealState));
-        long end = System.currentTimeMillis();
-        System.out.println("Duration : " + (end - init) + ", size: " + path.getLength());
         return pathToCommands(path);
     }
 

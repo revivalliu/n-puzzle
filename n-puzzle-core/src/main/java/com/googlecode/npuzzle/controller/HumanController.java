@@ -34,12 +34,11 @@ public class HumanController extends BaseController {
     public void addCommand(Command cmd) {
         if (cmd != null) {
             bufferCommand.offer(cmd);
-            //wait
         }
     }
 
     @Override
     public void startSolving() {
-        System.out.println("No solve implementation!!");
+        //Actually has no use for the HumanController
     }
 }
