@@ -19,6 +19,8 @@ public class ControllerFactory {
             return new AStarController(state);
         } else if ("genetic".equalsIgnoreCase(name)) {
             return new GAEncogController(state);
+        } else if ("annealing".equalsIgnoreCase(name)) {
+            return new SimulatedController(state);
         } else {
             throw new IllegalArgumentException("Invalid Controller.");
         }
