@@ -14,11 +14,14 @@
  *  limitations under the License.
  *  under the License.
  */
-
 package com.googlecode.npuzzle.controller;
 
 import com.googlecode.npuzzle.logic.Command;
 import com.googlecode.npuzzle.logic.PuzzleState;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -39,12 +42,34 @@ public abstract class BaseController implements Controller {
     }
 
     @Override
+    public List<Command> randomizeCommands() {
+        List<Command> result = new ArrayList<Command>();
+        PuzzleState<Integer> stateClone = initialState.copyState();
+        for (int i = 0; i < 40; i++) {
+            List<Command> cmds = new LinkedList<Command>(Arrays.
+                    asList(Command.values()));
+            while (cmds.size() > 0) {
+                int rand = random.nextInt(cmds.size());
+                Command cmd = cmds.remove(rand);
+                if (stateClone.canMove(cmd)) {
+                    stateClone.command(cmd);
+                    result.add(cmd);
+                    break;
+                } else {
+                    continue;
+                }
+            }
+        }
+        return result;
+    }
+
+    @Override
     public final void randomize() {
         synchronized (bufferCommand) {
             if (bufferCommand.isEmpty()) {
-                for (int i = 0; i < 100; i++) {
-                    int val = random.nextInt(4);
-                    bufferCommand.offer(Command.values()[val]);
+                List<Command> cmds = randomizeCommands();
+                while(!cmds.isEmpty()){
+                    bufferCommand.offer(cmds.remove(0));
                 }
             }
             execCommandsBuffer();
