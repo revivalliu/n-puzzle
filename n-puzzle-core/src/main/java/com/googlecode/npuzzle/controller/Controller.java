@@ -18,6 +18,7 @@
 package com.googlecode.npuzzle.controller;
 
 import com.googlecode.npuzzle.logic.Command;
+import java.util.List;
 
 /**
  *
@@ -30,6 +31,8 @@ public interface Controller {
     void stopSolving();
 
     void addCommand(Command cmd);
+
+    List<Command> randomizeCommands();
 
     void randomize();
 
