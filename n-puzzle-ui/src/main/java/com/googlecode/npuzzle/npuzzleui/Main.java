@@ -18,6 +18,7 @@
 package com.googlecode.npuzzle.npuzzleui;
 
 import com.googlecode.npuzzle.logic.Command;
+import java.util.List;
 import java.util.Random;
 import org.apache.pivot.collections.Map;
 import org.apache.pivot.wtk.Application;
@@ -53,9 +54,9 @@ public class Main implements Application {
             @Override
             public void buttonPressed(Button button) {
                 menu.setItem(0);
-                Random rand = new Random();
-                for (int i = 0; i < 30; i++) {
-                    board.getController().addCommand(Command.values()[rand.nextInt(4)]);
+                List<Command> cmds = board.getController().randomizeCommands();
+                while(!cmds.isEmpty()){
+                    board.getController().addCommand(cmds.remove(0));
                 }
                 board.getMenu().movingStatus();
             }
