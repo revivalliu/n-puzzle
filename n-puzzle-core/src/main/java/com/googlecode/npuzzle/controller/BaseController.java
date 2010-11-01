@@ -45,16 +45,22 @@ public abstract class BaseController implements Controller {
     public List<Command> randomizeCommands() {
         List<Command> result = new ArrayList<Command>();
         PuzzleState<Integer> stateClone = initialState.copyState();
+        Command previousCmd = null;
         for (int i = 0; i < 40; i++) {
-            List<Command> cmds = new LinkedList<Command>(Arrays.
-                    asList(Command.values()));
+            List<Command> cmds = new LinkedList<Command>(Arrays.asList(Command.values()));
             while (cmds.size() > 0) {
                 int rand = random.nextInt(cmds.size());
                 Command cmd = cmds.remove(rand);
                 if (stateClone.canMove(cmd)) {
-                    stateClone.command(cmd);
-                    result.add(cmd);
-                    break;
+                    if (previousCmd == null
+                            || cmd != Command.opposite(previousCmd)) {
+                        stateClone.command(cmd);
+                        result.add(cmd);
+                        previousCmd = cmd;
+                        break;
+                    } else {
+                        continue;
+                    }
                 } else {
                     continue;
                 }
@@ -68,7 +74,7 @@ public abstract class BaseController implements Controller {
         synchronized (bufferCommand) {
             if (bufferCommand.isEmpty()) {
                 List<Command> cmds = randomizeCommands();
-                while(!cmds.isEmpty()){
+                while (!cmds.isEmpty()) {
                     bufferCommand.offer(cmds.remove(0));
                 }
             }

@@ -14,7 +14,6 @@
  *  limitations under the License.
  *  under the License.
  */
-
 package com.googlecode.npuzzle.logic.genetic;
 
 import com.googlecode.npuzzle.logic.Command;
@@ -39,19 +38,6 @@ public class PuzzleChromosome extends Chromosome<Integer> {
     private Heuristic heuristicCost;
     private PuzzleState idealState;
 
-    /*public PuzzleChromosome(final PuzzleAlgorithm ga, PuzzleState state, Heuristic heuristicCost, PuzzleState idealState) {
-        this.heuristicCost = heuristicCost;
-        this.idealState = idealState;
-        setGeneticAlgorithm(ga);
-        this.state = state.copyState();
-        Integer[] gene = new Integer[GAEncogController.GENE_SIZE];
-        for (int i = 0; i < gene.length; i++) {
-            gene[i] = random.nextInt(4);
-        }
-        setGenes(gene);
-        calculateScore();
-    }*/
-
     public PuzzleChromosome(final PuzzleAlgorithm ga, PuzzleState state) {
         heuristicCost = new ManhattanHeuristic();
         idealState = new EigthPuzzleState();
@@ -67,9 +53,11 @@ public class PuzzleChromosome extends Chromosome<Integer> {
     @Override
     public void mutate() {
         Integer[] rep = getGenes();
-        int rand = random.nextInt(rep.length);
-        int val = random.nextInt(4);
-        rep[rand] = val;
+        int size = (int) (rep.length * 0.2);
+        int rand = random.nextInt(rep.length - size);
+        for (int i = 0; i < size; i++) {
+            rep[rand + i] = random.nextInt(4);
+        }
         setGenes(rep);
     }
 
