@@ -4,7 +4,7 @@
     <groupId>com.googlecode</groupId>
     <artifactId>n-puzzle</artifactId>
     <packaging>pom</packaging>
-    <version>1.1</version>
+    <version>1.1.2</version>
     <name>n-puzzle</name>
     <url>http://maven.apache.org</url>
     <contributors>
@@ -58,7 +58,7 @@
             <dependency>
                 <groupId>org.apache.pivot</groupId>
                 <artifactId>pivot-wtk-terra</artifactId>
-                <version>1.4</version>
+                <version>1.5.2</version>
                 <type>jar</type>
             </dependency>
         </dependencies>
